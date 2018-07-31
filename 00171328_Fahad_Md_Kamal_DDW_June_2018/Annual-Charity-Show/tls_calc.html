@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Tools And Calculator</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header class="main_head">
+        <div class="uper_header">
+            <div id="logo">
+                <img src="img/acs_logo.png" alt="ACS Logo">
+            </div>
+            <div class="company_name">
+                <a href="#">
+                    <span>A</span>nnual
+                    <span>C</span>harity
+                    <span>S</span>how</a>
+            </div>
+            <div class="signin">
+                <ul>
+                    <li class="sgn_up">
+                        <a href="joinus.html">Sign Up</a>
+                    </li>
+                    <li>
+                        <a href="signIn.html">Sing In</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Navigation Menu here -->
+        <div class="nav_menu">
+            <nav>
+                <ul class="main_nav">
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="chr_ents.html">Charity Events</a>
+                        <ul class="sub_nav">
+                            <li>
+                                <a href="#">SHELTER 1</a>
+                            </li>
+                            <li>
+                                <a href="#">SHELTER 2</a>
+                            </li>
+                            <li>
+                                <a href="#">SHELTER 3</a>
+                            </li>
+                            <li>
+                                <a href="#">SHELTER 4</a>
+                            </li>
+                            <li>
+                                <a href="#">SHELTER 5</a>
+                            </li>
+                            <li>
+                                <a href="#">SHELTER 6</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="fund_raising.html">Fund Rainsing</a>
+                    </li>
+                    <li>
+                        <a href="community.html">Community</a>
+                    </li>
+                    <li class="nr_lnh">
+                        <a href="news_review.html">News & Reviews</a>
+                    </li>
+                    <li class="tc_lnh selected">
+                        <a href="tls_calc.html">Tools and Calculators</a>
+                    </li>
+                    <li>
+                        <a href="joinus.html">Join Us Now</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+
+
+    <div class="container">
+        <div class="flex">
+            <div class="article_left">
+
+
+                <!-- ============================================ -->
+                <section class="form_center">
+                    <h2 class="header_centr">Annual Food Cost</h2>
+                    <hr class="devider_hr">
+
+                    <form id="form_food" action="get">
+                        <fieldset>
+                            <legend>Pet Food Calculator</legend>
+                            <h3>Step 1</h3>
+                            <p>Pet's type:</p>
+                            <select class="select" name="pet_typ_food" id="pet_typ_food">
+                                <option value="0">Select Pet</option>
+                                <option value="act-1">Dog</option>
+                                <option value="act-2">Cat</option>
+                                <option value="act-3">Rabbit</option>
+                                <option value="act-4">Guinea Pig</option>
+                                <option value="act-5">Rat</option>
+                            </select>
+                            <div class="inputs">
+                                <p>Pet's weight:</p>
+                                <input class="txt_bx" type="number" name="ptfod_weight" id="ptfod_weight" placeholder="Pet's Weighnt">
+                                <input class="radio_hide" type="radio" name="weight" id="ptf_pounds">
+                                <label class="radio_lbl" for="pounds">Pounds</label>
+                                <input class="radio_hide" type="radio" name="weight" id="ptf_Kilograms">
+                                <label class="radio_lbl" for="ptf_Kilograms">Kilograms</label>
+                            </div>
+                            <h3>Step 2</h3>
+                            <p>Your pet's activity level</p>
+                            <div class="inputs">
+                                <select class="select" name="activ_for_food" id="activ_for_food">
+                                    <option value="0">Select an activity level</option>
+                                    <option value="act-1">Typical</option>
+                                    <option value="act-2">Active</option>
+                                    <option value="act-3">Overweight</option>
+                                    <option value="act-4">Highly Active</option>
+                                    <option value="act-5">Senior, Neutered, inactive</option>
+                                </select>
+                            </div>
+                            <h3>Step 3</h3>
+                            <p>Your pet's calories per serving</p>
+                            <div class="inputs">
+                                <input class="txt_bx" type="number" name="calorie" id="food_calorie" placeholder="Enter approximate used calories per service">
+                                <input class="radio_hide" type="radio" name="unit" id="food_unit">
+                                <label class="radio_lbl" for="food_unit">kcal / cup</label>
+                                <input class="btn_style" type="submit" value="Calculate">
+                                <br>
+                                <label class="label">Result: e.g Your pet need"2500" calories per day.</label>
+                                <input class="btn_style" type="reset" value="Reset">
+                            </div>
+                        </fieldset>
+                    </form>
+                </section>
+
+                <hr class="devider_hr">
+
+
+
+                <!-- ================================================ -->
+
+
+
+                <section class="form_center">
+                    <h2 class="header_centr">Vet Bills</h2>
+                    <hr class="devider_hr">
+                    <form id="form_vat" action="get">
+                        <fieldset>
+                            <legend>Vet Bill</legend>
+                            <h3>Step 1</h3>
+                            <p>Pet's type:</p>
+                            <select class="select" name="pet_typ_vat" id="pet_typ_vat">
+                                    <option value="0">Select Pet</option>
+                                    <option value="act-1">Dog</option>
+                                    <option value="act-2">Cat</option>
+                                    <option value="act-3">Rabbit</option>
+                                    <option value="act-4">Guinea Pig</option>
+                                    <option value="act-5">Rat</option>
+                                </select>
+                            <div class="inputs">
+                                <p>Pet's weight:</p>
+                                <input class="txt_bx" type="number" name="weight" id="vt_weight" placeholder="Pet's Weighnt">
+                                <input class="radio_hide" type="radio" name="weight" id="vt_pounds">
+                                <label class="radio_lbl" for="vt_pounds">Pounds</label>
+                                <input class="radio_hide" type="radio" name="weight" id="vt_Kilograms">
+                                <label class="radio_lbl" for="vt_Kilograms">Kilograms</label>
+                            </div>
+                            <h3>Step 2</h3>
+                            <p>Your pet's Age</p>
+                            <div class="inputs">
+                                <select class="select" name="vat_age" id="vat_age">
+                                        <option value="0">Select Age Range</option>
+                                        <option value="act-1">0-1</option>
+                                        <option value="act-2">1-7</option>
+                                        <option value="act-3">7-10</option>
+                                    </select>
+                            </div>
+                            <h3>Step 3</h3>
+                            <p>Treatment</p>
+                            <div class="inputs">
+                                <select class="select" name="Treatment" id="Treatment">
+                                        <option value="0">Select Treatment</option>
+                                        <option value="t_mnt-1">Vaccination</option>
+                                        <option value="t_mnt-2">Medicine</option>
+                                        <option value="t_mnt-3">physical exam</option>
+                                        <option value="t_mnt-4">Blood Test</option>
+                                        <option value="t_mnt-5">Urine Tests</option>
+                                    </select>
+                                <input class="btn_style" type="submit" value="CALCULATE">
+                                <br>
+                                <label class="label">Result: e.g Your vet bill would be $400 NZ yearly..</label>
+                                <input class="btn_style" type="reset" value="Reset">
+
+                            </div>
+                        </fieldset>
+                    </form>
+                </section>
+
+                <hr class="devider_hr">
+
+                <section class="form_center">
+                    <h2 class="header_centr">Insurence Cost</h2>
+                    <hr class="devider_hr">
+
+
+
+
+                    <!-- ================================================ -->
+
+
+
+                    <form id="form_ins" action="get">
+                        <fieldset>
+                            <legend>Pet Insurence Calculator</legend>
+                            <h3>Step 1</h3>
+                            <p>Pet's type:</p>
+                            <select class="select" name="pet_typ_ins" id="pet_typ_ins">
+                                <option value="0">Select Pet</option>
+                                <option value="act-1">Dog</option>
+                                <option value="act-2">Cat</option>
+                                <option value="act-3">Rabbit</option>
+                                <option value="act-4">Guinea Pig</option>
+                                <option value="act-5">Rat</option>
+                            </select>
+                            <div class="inputs">
+                                <p>Pet's weight:</p>
+                                <input class="txt_bx" type="number" name="weight" id="ins_weight" placeholder="Pet's Weighnt">
+                                <input class="radio_hide" type="radio" name="weight" id="pounds">
+                                <label class="radio_lbl" for="pounds">Pounds</label>
+                                <input class="radio_hide" type="radio" name="weight" id="ins_Kilograms">
+                                <label class="radio_lbl" for="ins_Kilograms">Kilograms</label>
+                            </div>
+                            <h3>Step 2</h3>
+                            <p>Your pet's Age</p>
+                            <div class="inputs">
+                                <select class="select" name="pet_age_ins" id="pet_age_ins">
+                                    <option value="0">Select Age Range</option>
+                                    <option value="act-1">0-2</option>
+                                    <option value="act-2">2-4</option>
+                                    <option value="act-3">4-6</option>
+                                    <option value="act-4">6-8</option>
+                                    <option value="act-5">8+</option>
+                                </select>
+                            </div>
+                            <h3>Step 3</h3>
+                            <p>Monthly Instalment</p>
+                            <div class="inputs">
+                                <input class="txt_bx" type="number" name="calorie" id="ins_calorie" placeholder="Enter EMI">
+                                <input class="radio_hide" type="radio" name="unit" id="ins_unit">
+                                <label class="radio_lbl" for="ins_unit">One Time pay</label>
+                                <input class="btn_style" type="submit" value="Calculate">
+                                <br>
+                                <label class="label">Result: e.g You have to pay"$2500" per year.</label>
+                                <input class="btn_style" type="reset" value="Reset">
+                            </div>
+                        </fieldset>
+                    </form>
+                </section>
+
+            </div>
+
+            <aside class="aside_right">
+                <div>
+                    <p class="header_centr">Calculate pet expences here.</p>
+                    <hr>
+                    <table>
+                        <tr>
+                            <td class="result_calc" colspan="4"> 26 * 30 = 780</td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>8</td>
+                            <td>9</td>
+                            <td>÷</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>5</td>
+                            <td>6</td>
+                            <td>x</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>3</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>0</td>
+                            <td colspan="2">=</td>
+                            <td>+</td>
+                        </tr>
+                    </table>
+                </div>
+
+
+                <section>
+                    <h2 class="header_centr">Basic Care Equipment</h2>
+                    <hr class="devider_hr">
+                    <ul class="aside_list">
+                        <li>Pet First Aid Kit:
+                            <span class="imp_txt">$50</span>
+                            <hr>
+                        </li>
+                        <li>Cleaning Supplies:
+                            <span class="imp_txt">$20</span>
+                            <hr>
+                        </li>
+                        <li>Spare Collars and leashes:
+                            <span class="imp_txt">$10</span>
+                            <hr>
+                        </li>
+                        <li>Poop Bags:
+                            <span class="imp_txt">$5</span>
+                            <hr>
+                        </li>
+                        <li>Pet Toys:
+                            <span class="imp_txt">$3</span>
+                            <hr>
+                        </li>
+                        <li>Bottoled Water:
+                            <span class="imp_txt">$5</span>
+                            <hr>
+                        </li>
+                        <li>Towels and Large Blanket:
+                            <span class="imp_txt">$10</span>
+                            <hr>
+                        </li>
+                    </ul>
+                </section>
+                <hr class="devider_hr">
+                <a class="btn_style" href="fund_raising.html">DONATE</a>
+
+            </aside>
+        </div>
+    </div>
+
+
+    <hr class="bold_hr">
+
+
+
+
+    <!-- Partners Section -->
+    <section>
+        <h2 class="header_centr">Our patrons </h2>
+        <hr class="devider_hr">
+        <div class="flex prt_logo">
+            <div class="partner_1"></div>
+            <div class="partner_2"></div>
+            <div class="partner_3"></div>
+            <div class="partner_4"></div>
+        </div>
+    </section>
+    <hr class="devider_hr">
+
+    <footer>
+        <div class="center flex">
+            <div class="f_lst">
+                <h3>Annual Charity Show</h3>
+                <ul>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="chr_ents.html">Charity Events</a>
+                    </li>
+                    <li>
+                        <a href="fund_raising.html">Fund Rainsing</a>
+                    </li>
+                    <li>
+                        <a href="community.html">Community</a>
+                    </li>
+                    <li>
+                        <a href="news_review.html">News & Reviews</a>
+                    </li>
+                    <li>
+                        <a href="tls_calc.html">Tools and Calculators</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="f_lst">
+                <h3>News</h3>
+                <ul>
+                    <li>
+                        <a href="#">Recent News</a>
+                    </li>
+                    <li>
+                        <a href="#">Upcoming News</a>
+                    </li>
+                    <li>
+                        <a href="http://www.gamil.com">Email@gamil.com</a>
+                    </li>
+                    <li>+156542577555</li>
+                </ul>
+            </div>
+            <div class="f_lst">
+                <h3>Join Us Now</h3>
+                <ul>
+                    <li>
+                        <a href="#">
+                            <img src="img/fb.png" alt="Facebook">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="img/twee.png" alt="Twitter">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="img/google-plus.png" alt="Google+">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="img/linkedin.png" alt="Linked In">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <p class="copy_right">Copy Right@ ACS 2018</p>
+    </footer>
+
+
+</body>
+
+</html>

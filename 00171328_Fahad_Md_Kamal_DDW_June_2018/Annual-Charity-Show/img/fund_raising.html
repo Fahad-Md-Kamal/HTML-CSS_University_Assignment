@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Fund Raising</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header class="main_head">
+        <div class="uper_header">
+            <div id="logo">
+                <img src="img/acs_logo.png" alt="ACS Logo">
+            </div>
+            <div class="company_name">
+                <a href="#">
+                    <span>A</span>nnual
+                    <span>C</span>harity
+                    <span>S</span>how</a>
+            </div>
+            <div class="signin">
+                <ul>
+                    <li class="sgn_up">
+                        <a href="joinus.html">Sign Up</a>
+                    </li>
+                    <li>
+                        <a href="signIn.html">Sing In</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Navigation Menu here -->
+        <div class="nav_menu">
+            <nav>
+                <ul class="main_nav">
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="chr_ents.html">Charity Events</a>
+                        <ul class="sub_nav">
+                            <li>
+                                <a href="#">SHELTER 1</a>
+                            </li>
+                            <li>
+                                <a href="#">SHELTER 2</a>
+                            </li>
+                            <li>
+                                <a href="#">SHELTER 3</a>
+                            </li>
+                            <li>
+                                <a href="#">SHELTER 4</a>
+                            </li>
+                            <li>
+                                <a href="#">SHELTER 5</a>
+                            </li>
+                            <li>
+                                <a href="#">SHELTER 6</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="selected">
+                        <a href="fund_raising.html">Fund Rainsing</a>
+                    </li>
+                    <li>
+                        <a href="community.html">Community</a>
+                    </li>
+                    <li class="nr_lnh">
+                        <a href="news_review.html">News & Reviews</a>
+                    </li>
+                    <li class="tc_lnh">
+                        <a href="tls_calc.html">Tools and Calculators</a>
+                    </li>
+                    <li>
+                        <a href="joinus.html">Join Us Now</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+
+    <div class="container">
+
+
+
+        <h1 class="header_centr">Donate & Support ACS</h1>
+        <hr class="bold_hr">
+
+        <div class="flex">
+            <aside class="aside_left">
+
+
+                <article>
+                    <img class="Inner_img round_img" src="img/dog-behind-barrier.jpg" alt="">
+                    <h2 class="header_left">Support Annual Charity Show :</h2>
+                    <hr>
+                    <p class="inner_p_txt">Your donation will help us to provide more support to the homeless pets.</p>
+                </article>
+
+
+                <article>
+                    <h4 class="header_left">Total Fund collected in this month</h4>
+                    <hr>
+                    <p class="inner_p_txt imp_txt"> £ 1,00,00.00</p>
+                </article>
+
+
+                <article class="box">
+                    <h4 class="header_left">Total donation made the users today:</h4>
+                    <hr>
+                    <p class="inner_p_txt imp_txt">
+                        LeonardoDeCaprion, JonnyDeep, BradlyCooper, RobartDounyJr., Ronaldinho, Cafu, Kaka, Revaldo
+                    </p>
+                </article>
+
+
+            </aside>
+
+
+            <div class="flex">
+                <div class="form_section">
+                    <form id="form" action="action.php" method="POST">
+                        <fieldset>
+                            <legend>Donation Form</legend>
+                            <div class="flex">
+                                <input class="radio_hide" type="radio" name="amount" id="amount_1">
+                                <label class="radio_lbl" for="amount_1">£10</label>
+                                <input class="radio_hide" type="radio" name="amount" id="amount_2">
+                                <label class="radio_lbl" for="amount_2">£25</label>
+                                <input class="radio_hide" type="radio" name="amount" id="amount_3">
+                                <label class="radio_lbl" for="amount_3">£50</label>
+                                <input class="radio_hide" type="radio" name="amount" id="amount_4">
+                                <label class="radio_lbl" for="amount_4">£100</label>
+                                <br>
+                            </div>
+                            <label for="Other_amount">Other amount:</label>
+                            <input class="txt_bx" type="number" name="amount" id="Other_amount" placeholder="Input Other Amount">
+                            <label for="Other_amount">Donation Type:</label>
+                            <select class="txt_bx" name="donation_type" id="donatatin_type">
+                                <option class="txt_bx" value="type_one">One Time Donation</option>
+                                <option class="txt_bx" value="type_two">Monthly</option>
+                                <option class="txt_bx" value="type_three">Weekly</option>
+                            </select>
+                            <div class="flex">
+                                <div class="first_name_txt">
+                                    <label for="first_name">First Name:</label>
+                                    <input class="txt_bx" type="text" name="first_name" id="first_name" required placeholder="e.g: Ed">
+                                </div>
+
+                                <div class="last_name_txt">
+                                    <label for="last_name">Last Name:</label>
+                                    <input class="txt_bx" type="text" name="last_name" id="last_name" required placeholder="e.g: Shareen">
+                                </div>
+                            </div>
+                            <label for="user_email">Email Address:</label>
+                            <input class="txt_bx" type="email" name="user_email" id="user_email" placeholder="e.g: email@domain.com">
+                            <label for="user_card">Credit/Debit Card No:</label>
+                            <input class="txt_bx" type="email" name="user_card" id="user_card" placeholder="X-XXX-XXX-XXX">
+                            <input type="checkbox" name="newsletters" id="newsletters" checked>
+                            <label for="newsletters">Do you want us to sand Monthly newsletters ?</label>
+                            <br>
+                            <input type="checkbox" name="megazins" id="megazins" checked>
+                            <label for="megazins">Do you want us to sand ACS Megazins ?</label>
+                            <input class="btn_style" type="submit" value="DONATE">
+                            <input class="btn_style" type="reset" value="RESET">
+                        </fieldset>
+                    </form>
+                </div>
+
+
+
+
+
+                <section class="collection_section">
+                    <h2 class="header_centr">Targeted Fund</h2>
+                    <hr>
+                    <p class="inner_p_txt background_color">
+                        ACS has targeted total fund to be raised in this year is
+                        <span class="imp_txt">$1,00,000</span> NZ this year. But so far ACS has collected around
+                        <span class="imp_txt">$40,000</span>.
+                    </p>
+                    <hr class="bold_hr">
+
+                    <h2 class="header_centr">Past Year Collection</h2>
+                    <hr>
+                    <p class="inner_p_txt background_color">
+                        ACS had raised approximately
+                        <span class="imp_txt">$100,000</span> NZ last year where the target was
+                        <span class="imp_txt">$90,000</span> NZ.
+                    </p>
+                    <hr class="devider_hr">
+
+
+                    <h2 class="header_centr">PDF Downloads</h2>
+                    <hr>
+
+                    <object class="obj" data="objcets/Animal-Shelter-Fundraising-Flyer.pdf">
+                    <a href="objcets/Animal-Shelter-Fundraising-Flyer.pdf" download  class="rg_link">Download PDF</a>
+                    </object>
+
+                </section>
+                <!-- </a> -->
+
+
+            </div>
+        </div>
+    </div>
+    <hr class="devider_hr">
+
+
+
+
+    <!-- Partners Section -->
+    <section class="partner">
+        <h2 class="header_centr">Our patrons </h2>
+        <hr class="devider_hr">
+        <div class="flex prt_logo">
+            <div class="partner_1"></div>
+            <div class="partner_2"></div>
+            <div class="partner_3"></div>
+            <div class="partner_4"></div>
+        </div>
+    </section>
+    <hr class="devider_hr">
+
+    <footer>
+        <div class="center flex">
+            <div class="f_lst">
+                <h3>Annual Charity Show</h3>
+                <ul>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="chr_ents.html">Charity Events</a>
+                    </li>
+                    <li>
+                        <a href="fund_raising.html">Fund Rainsing</a>
+                    </li>
+                    <li>
+                        <a href="community.html">Community</a>
+                    </li>
+                    <li>
+                        <a href="news_review.html">News & Reviews</a>
+                    </li>
+                    <li>
+                        <a href="tls_calc.html">Tools and Calculators</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="f_lst">
+                <h3>News</h3>
+                <ul>
+                    <li>
+                        <a href="#">Recent News</a>
+                    </li>
+                    <li>
+                        <a href="#">Upcoming News</a>
+                    </li>
+                    <li>
+                        <a href="http://www.gamil.com">Email@gamil.com</a>
+                    </li>
+                    <li>+156542577555</li>
+                </ul>
+            </div>
+            <div class="f_lst">
+                <h3>Join Us Now</h3>
+                <ul>
+                    <li>
+                        <a href="#">
+                            <img src="img/fb.png" alt="Facebook">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="img/twee.png" alt="Twitter">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="img/google-plus.png" alt="Google+">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="img/linkedin.png" alt="Linked In">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <p class="copy_right">Copy Right@ ACS 2018</p>
+    </footer>
+
+
+</body>
+
+</html>

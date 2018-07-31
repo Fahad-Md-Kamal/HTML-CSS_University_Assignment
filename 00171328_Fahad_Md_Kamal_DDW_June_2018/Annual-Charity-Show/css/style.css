@@ -1,0 +1,856 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #363946;
+}
+
+
+/* Default list style */
+
+ul {
+    list-style: none;
+}
+
+ul li {
+    text-align: center;
+}
+
+ul li a {
+    display: block;
+}
+
+.selected {
+    background-color: #00796b;
+}
+
+
+/* logo section */
+
+#logo {
+    width: 20%;
+}
+
+#logo img {
+    margin: 20px 20px 0;
+    width: 150px;
+}
+
+
+/* Company name here */
+
+.company_name {
+    padding-top: 25px;
+    font-size: 2em;
+    font-weight: bolder;
+    width: 60%;
+    text-align: center;
+}
+
+.company_name span {
+    color: #1187f5;
+    font-size: 1.2em;
+}
+
+
+/* Sign in buttons */
+
+.signin {
+    width: 25%;
+    margin-top: 40px;
+}
+
+.signin li {
+    float: right;
+    margin-right: 5px;
+    padding: 5px;
+    width: 70px;
+    color: #ffffff;
+    font-weight: bolder;
+    border: 2px solid #ffffff;
+    border-radius: 20px;
+}
+
+.signin li:hover {
+    background-color: #ffab3d;
+    transition: .4s;
+}
+
+
+/* upper header section control */
+
+.uper_header {
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 1375px) {
+    .tc_lnh {
+        line-height: 25px;
+    }
+}
+
+@media screen and (max-width: 1077px) {
+    .nr_lnh {
+        line-height: 25px;
+    }
+}
+
+@media screen and (min-width: 852px) {
+    nav,
+    .lst_style {
+        width: 80%;
+        margin: 0 auto;
+        height: 50px;
+        background-color: #ffab3d;
+    }
+    nav,
+    .lst_style {
+        width: 80%;
+        margin: 0 auto;
+        height: 50px;
+        background-color: #ffab3d;
+    }
+    nav ul li,
+    .lst_style li {
+        float: left;
+        width: 14.27%;
+        height: 50px;
+        line-height: 50px;
+        font-size: 92%;
+        background-color: #ffab3d;
+    }
+    nav ul li ul li {
+        width: 100%;
+        display: none;
+    }
+    nav ul li:hover {
+        box-shadow: 0px 0px 20px white;
+        transition: .4s;
+        background-color: #006356;
+    }
+    nav ul li:hover ul li {
+        display: block;
+    }
+}
+
+
+/* Heading section */
+
+header {
+    position: relative;
+    color: white;
+    background-color: #006356;
+    height: 150px;
+    z-index: 50;
+}
+
+.rs_menu {
+    width: 100px;
+    height: 75px;
+}
+
+@media screen and (max-width: 954px) {
+    .main_head {
+        font-size: 14px;
+    }
+    .company_name a {
+        font-size: 25px;
+        margin-left: 50px;
+    }
+}
+
+@media screen and (max-width: 852px) {
+    .main_head {
+        font-size: 14px;
+    }
+    .company_name a {
+        font-size: 25px;
+        margin-left: 50px;
+    }
+}
+
+
+/* Image Box */
+
+.big_img_box {
+    position: relative;
+    background: url(../img/pet-valu-paws-fundraising.jpg) center 0% no-repeat;
+    background-size: cover;
+    font-weight: 900;
+    height: 600px;
+}
+
+.image_heading {
+    position: absolute;
+    top: 65%;
+    font-size: 3em;
+    text-align: center;
+    z-index: 20;
+    color: #00796b;
+    text-shadow: 0 0 5px #f3971f;
+    background-color: rgba(199, 199, 199, 0.226);
+}
+
+.dots {
+    position: absolute;
+    left: 45%;
+    top: 80%;
+    color: #1da556;
+    font-size: 5em;
+}
+
+.image_heading::before,
+.image_heading::after {
+    content: ' " ';
+    color: #ff9a16;
+    text-shadow: 0 0 10px #006356;
+}
+
+.top_sunb_sec {
+    padding: 30px;
+    width: 25%;
+}
+
+.top_sunb_sec h3 {
+    text-align: center;
+    color: #9b5656;
+}
+
+.top_sunb_sec img {
+    width: 100%;
+    height: 45vh;
+    border-radius: 50%;
+}
+
+.top_sunb_sec p {
+    margin: 30px 0 15px;
+}
+
+
+/* link button style */
+
+.top_sunb_sec button .link {
+    cursor: pointer;
+    font-size: 1.2em;
+    font-weight: 800;
+    padding: 5px;
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    background-color: #4dd0e1;
+    text-align: center;
+    margin: 30px 0;
+    width: 180px;
+}
+
+
+/* =========Media Quary only for Flex============ */
+
+@media screen and (min-width: 852px) {
+    .flex {
+        display: flex;
+        margin: 0 auto;
+    }
+}
+
+.margin {
+    margin: 10px 0;
+}
+
+.prt_logo div {
+    width: 80%;
+    height: 150px;
+    margin: 0 3%;
+}
+
+.prt_logo .partner_1 {
+    background: url(../img/Budgerigar-Society-Logo.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+.prt_logo .partner_2 {
+    background: url(../img/REPTA.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+.prt_logo .partner_3 {
+    background: url(../img/OATA-logo.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+.prt_logo .partner_4 {
+    background: url(../img/Ferret-logo.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+footer {
+    background-color: #6b6b6b;
+    color: #ffffff;
+    text-align: center;
+    line-height: 25px;
+    padding-top: 50px;
+}
+
+footer a {
+    margin: 15px 0;
+}
+
+footer a:hover,
+footer img:hover {
+    text-decoration: underline;
+}
+
+@media screen and (min-width: 852px) {
+    .f_lst {
+        width: 30%;
+        margin-left: 3.33%;
+    }
+}
+
+.copy_right {
+    background-color: #9c9c9c;
+}
+
+
+/* ****************************************************** */
+
+.container {
+    width: 90%;
+    margin: 30px auto;
+}
+
+
+/* ==============article and aside sections========================= */
+
+.article {
+    width: 78%;
+}
+
+.article_left {
+    width: 60%;
+}
+
+.aside_right {
+    width: 25%;
+    margin-left: 15%;
+}
+
+.aside_left {
+    width: 30%;
+    margin: 0 2%;
+}
+
+.form_section {
+    width: 100%;
+    margin: 0 auto;
+    margin: 0 5%;
+}
+
+.collection_section {
+    margin: 0 auto;
+    width: 100%;
+}
+
+
+/* ===========Main sections ==================== */
+
+.box {
+    margin: 10px .5%;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+}
+
+.joinus {
+    padding: 30px 10px;
+}
+
+.box img {
+    width: 48%;
+}
+
+section article {
+    margin: 10px .5%;
+}
+
+.comment_box {
+    padding: 5px;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+}
+
+.btn_eq {
+    width: 23%;
+    margin: 0 .9%;
+}
+
+.half_width {
+    width: 50%;
+}
+
+
+/* ====== Horzental Rule ============== */
+
+hr {
+    height: 3px;
+    border: none;
+    border-radius: 100%;
+    background-color: #ff9a16;
+}
+
+.bold_hr {
+    width: 100%;
+    height: 10px;
+    margin-bottom: 20px;
+}
+
+.devider_hr {
+    margin: 40px 0;
+}
+
+.rd_btn {
+    display: block;
+}
+
+.innar_main_div {
+    border: 2px solid #dfdfdf;
+    width: 100%;
+}
+
+.Join_form {
+    width: 40%;
+    margin: 20px auto;
+}
+
+
+/* =============== Smaller divs Text & Images ================ */
+
+.Inner_img {
+    width: 80%;
+    height: 230px;
+    margin: 0 10px;
+    box-shadow: 1px 1px 5px black;
+}
+
+.round_img {
+    border-radius: 50%;
+    border: 5px solid #ff9a16;
+    box-shadow: 1px 1px 5px black;
+}
+
+.resized_img {
+    width: 90%;
+}
+
+.rating {
+    height: 30px;
+    border: 1px solid black;
+}
+
+
+/* ===================== text =================== */
+
+.Inner_p {
+    padding: 10px 10px;
+    margin: 20px 0;
+}
+
+.inner_p_txt {
+    margin: 10px 0;
+    padding: 10px 10px;
+    font-size: 1.2em;
+    box-shadow: 0px 1px 5px black;
+}
+
+.imp_txt {
+    color: white;
+    text-align: center;
+    font-size: .8em;
+    font-weight: 900;
+    background-color: #f5ae51;
+    border-radius: 10px;
+}
+
+.rating_points {
+    float: right;
+    font-size: 1.5em;
+    font-weight: 900;
+    color: white;
+    height: 30px;
+    padding: 4px;
+    background-color: #f3971f;
+}
+
+.background_color {
+    color: white;
+    background-color: #6aa79f;
+    border-radius: 10px;
+    box-shadow: 0 1px 5px black;
+}
+
+
+/* ========== Videos ============ */
+
+.yt_frame {
+    width: 95%;
+    height: 350px;
+}
+
+.vid_frame {
+    width: 250px;
+    height: 255px;
+}
+
+.obj {
+    height: 600px;
+    width: 100%;
+}
+
+
+/*=================== View link style======================= */
+
+.view_link {
+    width: 40%;
+    background-color: #00796b;
+    margin: 20px auto;
+    text-align: center;
+    padding: 2px;
+    border: 4px solid #757575;
+    border-radius: 10px;
+    color: #ffd06b;
+    font-weight: 900;
+    box-shadow: 0px 0px 8px black;
+}
+
+.view_link:hover {
+    border: 4px solid #b2dfdb;
+    color: #fff;
+    background-color: #04a090;
+    transition: .6s;
+}
+
+.comment {
+    background-color: #ff9100;
+    line-height: 20px;
+    border-radius: 20px;
+    padding: 2px;
+    color: white;
+}
+
+.rg_link {
+    color: #006356;
+}
+
+
+/* Heading One=================   H1   ============*/
+
+.header_left {
+    color: #00796b;
+    margin: 15px 0;
+    padding: 0 10px;
+    font-weight: 900;
+    font-size: 1.5em;
+}
+
+.header_centr {
+    color: #00796b;
+    margin: 20px 0;
+    text-align: center;
+    font-weight: 900;
+    font-size: 1.5em;
+}
+
+.header_2 {
+    padding: 0 10px;
+    margin: 10px 0;
+}
+
+
+/* ===========Form Style======================= */
+
+#form,
+#form_food,
+#form_ins,
+#form_vat {
+    width: 80%;
+    margin: 20px auto;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #ffd06b;
+    box-shadow: 0px 0px 10px black;
+}
+
+.form_center {
+    width: 60%;
+    margin: 0 auto;
+}
+
+fieldset {
+    border: none;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 10px 0;
+}
+
+legend {
+    width: 100%;
+    text-align: center;
+    padding: 5px 0;
+    margin: 10px 0;
+    background-color: #00796b;
+    color: #fff;
+    font-size: 1.2em;
+    font-weight: bold;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px black;
+}
+
+.lbl {
+    width: 100%;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 1.2em;
+    text-shadow: 0px 0px 3px #808080;
+}
+
+.label {
+    display: block;
+    height: 50px;
+    color: white;
+    font-weight: 900;
+    background-color: #049c8a;
+    border-radius: 20px;
+    padding: 5px;
+    line-height: 40px;
+}
+
+.first_name_txt {
+    width: 48%;
+    margin-right: 4%;
+}
+
+.last_name_txt {
+    width: 48%;
+}
+
+.txt_bx {
+    border: none;
+    width: 100%;
+    border-bottom: 4px solid #b4b4b4;
+    box-shadow: 0 0 5px #616161;
+    margin: 10px 0;
+    height: 30px;
+    font-size: 1.1em;
+    border-radius: 5px;
+}
+
+.cmt_bx {
+    width: 50%;
+    height: 100px;
+}
+
+.txt_bx:hover,
+.txt_bx:focus {
+    box-shadow: 0 0 10px black;
+    border-bottom: 4px solid #46bdb1;
+    transition: .6s;
+}
+
+.btn_style {
+    border: none;
+    border-radius: 10px;
+    margin: 10px 0;
+    width: 100%;
+    padding: 5px;
+    font-size: 1.2em;
+    font-weight: 900;
+    box-shadow: 0 0 4px black;
+    background-color: #ff9100;
+    color: #fff;
+    cursor: pointer;
+}
+
+.btn_style:hover {
+    background-color: #ffab3d;
+    box-shadow: 0 0 8px black;
+    transition: .4s;
+}
+
+.btn_style:active {
+    background-color: #9abe17;
+    color: #757575;
+}
+
+
+/* ============tabel=========== */
+
+table {
+    border: 2px solid black;
+    margin: 50px 0;
+}
+
+table td {
+    border: 2px solid black;
+    color: white;
+    font-weight: 900;
+    font-size: 1.3em;
+    height: 60px;
+    width: 70px;
+    text-align: center;
+    background-color: #ffab3d;
+}
+
+table td:hover {
+    background-color: #46bdb1;
+}
+
+.result_calc:hover {
+    background-color: #ffab3d;
+}
+
+
+/* ============= listyle ==================== */
+
+.aside_list {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.aside_list li {
+    margin: 5px 0;
+    background-color: #b2dfdb;
+}
+
+.scl_lst li img {
+    height: 50px;
+    margin-bottom: 7px;
+}
+
+
+/* =================== */
+
+.select {
+    width: 50%;
+    height: 30px;
+    text-align: center;
+    margin: 20px auto;
+    font-size: 1.2em;
+    font-weight: 900;
+    color: #1e1b35;
+    background-color: #dadada;
+}
+
+.radio_hide {
+    display: none;
+}
+
+.radio_lbl {
+    width: 23%;
+    margin: 0 1%;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 5px;
+    font-size: 1.3em;
+    font-weight: bold;
+    color: white;
+    background-color: #ff9100;
+    text-align: center;
+}
+
+.radio_lbl:hover {
+    background-color: #9abe17;
+}
+
+.radio_hide:checked+.radio_lbl {
+    background-color: #00796b;
+}
+
+@media screen and (max-width: 851px) {
+    .article_sec {
+        width: fit-content;
+        margin: 20px 10%;
+        padding-left: 30px;
+    }
+    .partner {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .aside_left {
+        width: 50%;
+        margin: 0 auto;
+    }
+    .view_link {
+        width: 100px;
+    }
+    .company_name a {
+        display: none;
+    }
+    .big_img_box {
+        display: none;
+    }
+    .ch_img {
+        display: none;
+    }
+    nav {
+        margin: 52px 0%;
+    }
+    .main_nav li {
+        background-color: #ff9100;
+        margin-bottom: 2px;
+        font-size: 20px;
+    }
+    .sub_nav li {
+        background: #088f66;
+        margin: 2px 0;
+        color: white;
+    }
+    .main_nav li:hover,
+    .sub_nav li:hover {
+        background-color: #fff;
+        color: steelblue;
+    }
+    .prt_logo {
+        margin-left: 40%;
+    }
+    .container {
+        top: 100px;
+        margin: 400px auto;
+        width: 90%;
+    }
+    .aside_list li,
+    .Inner_p {
+        width: 200px;
+    }
+    .header_centr,
+    .header_left {
+        font-size: 14px;
+    }
+    .btn_style {
+        font-size: 15px;
+    }
+    .header_left {
+        font-size: 16px;
+    }
+    .vid_frame {
+        display: none;
+    }
+    .map {
+        /* width: 80%; */
+        display: none;
+    }
+}
+
+@media screen and (max-width:852px) {
+    .aside_list li {
+        margin-left: -80%;
+    }
+}
